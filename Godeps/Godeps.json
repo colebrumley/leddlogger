@@ -1,0 +1,28 @@
+{
+	"ImportPath": "github.com/colebrumley/leddlogger",
+	"GoVersion": "go1.5",
+	"Deps": [
+		{
+			"ImportPath": "github.com/bsphere/le_go",
+			"Rev": "327d5c4e4f16a5d78ad020f8bcf7e687e0b5b003"
+		},
+		{
+			"ImportPath": "github.com/codegangsta/cli",
+			"Comment": "1.2.0-137-gbca61c4",
+			"Rev": "bca61c476e3c752594983e4c9bcd5f62fb09f157"
+		},
+		{
+			"ImportPath": "github.com/colebrumley/dockeraction",
+			"Rev": "6a66ff61eac02cf0397fa2afa5d33bbe20dec545"
+		},
+		{
+			"ImportPath": "github.com/fsouza/go-dockerclient",
+			"Rev": "4dae22c493daed4450b52fd936aab1d12b5b5500"
+		},
+		{
+			"ImportPath": "github.com/sirupsen/logrus",
+			"Comment": "v0.8.6-7-g9c060de",
+			"Rev": "9c060de643590dae45da9d7c26276463bfc46fa0"
+		}
+	]
+}
