@@ -11,7 +11,15 @@ dependencies:
     - go get github.com/tools/godep
     - godep go build -o leddlogger_binary -a -installsuffix cgo
     - cp leddlogger_binary $CIRCLE_ARTIFACTS/leddlogger
-    
+
 test:
   override:
-    - echo "It's fine, don't worry about it."
+    - echo "It's fine"
+
+deployment:
+  master:
+    branch: master
+    commands:
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_REPO_LOGIN -p $DOCKER_PASS
+      - docker build -t elcolio/leddlogger .
+      - docker push elcolio/leddlogger
